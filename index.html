@@ -199,6 +199,7 @@
   .search-clear:hover{color:var(--accent)}
   .form.empty{border:2px dashed var(--accent);background:rgba(36,154,168,0.04);padding:16px;border-radius:12px}
 </style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Filament Spool Tracker", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Web browser", "url": "https://islaimpresa.github.io/FilamentTracker/", "description": "Free filament inventory tracker: log spools, grams left, cost per gram, and low-stock alerts.", "inLanguage": ["en", "es"], "isAccessibleForFree": true, "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "author": {"@type": "Organization", "name": "Isla Impresa", "url": "https://islaimpresa.github.io/", "sameAs": ["https://www.instagram.com/islaimpresa/", "https://www.facebook.com/Islaimpresa/"], "@context": "https://schema.org"}}</script>
 </head>
 
 <body>
@@ -224,6 +225,10 @@
     <a href="https://islaimpresa.github.io/ResinTracker/" id="navRTracker">Resin Tracker</a>
     <span class="sep">•</span>
     <a href="https://islaimpresa.github.io/UnitConverter/" id="navConverter">Unit Converter</a>
+    <span class="sep">•</span>
+    <a href="https://islaimpresa.github.io/Troubleshooter/" id="navTrouble">Troubleshooter</a>
+    <span class="sep">•</span>
+    <a href="https://islaimpresa.github.io/MaterialSelector/" id="navMaterial">Material Selector</a>
   </div>
   <p class="sub"><b id="slogan">Technical Mastery. Creative Design. Made in Puerto Rico.</b><br><span id="subtext">Track your filament spools, remaining weight, and inventory value.</span></p>
 
@@ -351,7 +356,7 @@
       usePrompt:"Grams used in this print?", refillPrompt:"New remaining grams (e.g. fresh 1000g spool):",
       confirmDel:"Delete this spool?", needBrand:"Enter at least a brand or material.",
       remaining:"remaining", of:"of",
-      navFdm:"FDM Calculator", navResin:"Resin Calculator", navRTracker:"Resin Tracker", navConverter:"Unit Converter"
+      navFdm:"FDM Calculator", navResin:"Resin Calculator", navRTracker:"Resin Tracker", navConverter:"Unit Converter", navTrouble:"Troubleshooter", navMaterial:"Material Selector"
     },
     es:{
       tagline:"// inventario de filamento",
@@ -374,7 +379,7 @@
       usePrompt:"¿Gramos usados en esta impresión?", refillPrompt:"Nuevos gramos restantes (ej. carrete nuevo de 1000g):",
       confirmDel:"¿Eliminar este carrete?", needBrand:"Ingresa al menos una marca o material.",
       remaining:"restante", of:"de",
-      navFdm:"Calculadora FDM", navResin:"Calculadora de Resina", navRTracker:"Rastreador de Resina", navConverter:"Conversor de Unidades"
+      navFdm:"Calculadora FDM", navResin:"Calculadora de Resina", navRTracker:"Rastreador de Resina", navConverter:"Conversor de Unidades", navTrouble:"Diagnóstico", navMaterial:"Selector de Material"
     }
   };
 
@@ -441,6 +446,8 @@
     $("navResin").textContent=t("navResin");
     $("navRTracker").textContent=t("navRTracker");
     $("navConverter").textContent=t("navConverter");
+    $("navTrouble").textContent=t("navTrouble");
+    $("navMaterial").textContent=t("navMaterial");
     $("lblMaterial").textContent=t("material");
     $("lblColor").textContent=t("color");
     $("lblColorHex").textContent=t("colorHex");
